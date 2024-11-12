@@ -1,26 +1,16 @@
-class Employee{
-    private int id;
-    private String name;
-    private double salary;
-    public Employee(int id, String name,double salary){
-        this.id=id;
-        this.name=name;
-        this.salary=salary;}
-    public void raiseSalary(double percent){
-        if(percent>0){
-            double increment=salary*percent/100;
-            salary=salary+increment;
-            System.out.println("New Salary: " +salary);}
-        else{
-            System.out.println("Salary: "+salary);}}
-    public void getEmpDetails(){
-        System.out.println(name + " "+ salary);}}
-public class M2{
-    public static void main(String[] args) {
-        Employee emp1=new Employee(1,"Madan",5000);
-        emp1.getEmpDetails();
-        emp1.raiseSalary(10);
-        emp1.getEmpDetails();
-    }
+package pkg1;
+
+public class M2 {
+
+	public static void main(String[] args) {
+		String s1="Chandrashekar Rao Kuthyar";
+		int len1=s1.length();
+		String s2=" ";
+		for(int i=0;i<len1;i++){
+			s2=s2+s1.substring(len1-(i+1),len1-i);
+		}
+				System.out.println(s2);
+
+	}
+
 }
-    
